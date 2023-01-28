@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora | 5</title>
+
+    <style>
+        span{
+            display: block;
+            margin: 10px;
+        }
+        input[type="radio"]{
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <span>Numero: 
+        <input type="number" name="number" id="num1">
+    </span>
+    <span>Numero:
+        <input type="number" name="number" id="num2">
+    </span>
+
+    <span>
+        +
+        <input type="radio" name="simbolo" id="simbolo" value="+"> 
+    </span>
+
+    <span>
+        -
+        <input type="radio" name="simbolo" id="simbolo" value="-">
+    </span>
+
+    <span>
+        *
+        <input type="radio" name="simbolo" id="simbolo" value="*">
+    </span>
+
+    <span>
+        /
+        <input type="radio" name="simbolo" id="simbolo" value="/">
+    </span>
+
+    <input type="submit" onclick="calculadora()" value="Calcular">
+    <script src="app.js" defer></script>
+</body>
+</html>
